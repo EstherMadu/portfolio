@@ -13,7 +13,4 @@ function waitForMs(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-typeSentence(
-  "Hi! My name is Esther, I am a Frontend Devloper. click on the cool stuffs button to skip to the good part ☺️",
-  "#sentence"
-);
+typeSentence("Esther Maduabuchi", "#navbar-logo");

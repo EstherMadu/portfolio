@@ -1,32 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth hover:scroll-auto">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio Page</title>
     <link rel="stylesheet" href="style.css" />
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container min-w-full">
       <nav>
-        <a href="#" class="logo" id="navbar-logo">ESCODES</a>
+        <a href="#" class="logo font-medium" id="navbar-logo"></a>
         <ul>
-          <li><a href="#">About</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Porfolio</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Portfolio</a></li>
         </ul>
       </nav>
-
-      <div class="typing-container">
+      <div
+        class="typing-container mt-10 text-4xl w-full leading-relaxed sm:w-2/3 lg:1/2 sm:text-5xl sm:font-medium text-white flex sm:leading-relaxed"
+      >
         <span id="sentence" class="sentence"> </span>
+        <span id="second-sentence" class="second-sentence"> </span>
         <!-- <span class="input-cursor"></span> -->
       </div>
-      <button class="button" id="btn">Cool Stuffs</button>
-      <p id="demo"></p>
+
+      <!-- <button class="button" id="btn">Cool Stuffs</button> -->
     </div>
+    <main>
+      <div class="bg-slate-50" id="portfolio">
+        <h2 class="text-center text-6xl pt-32 sm:pt-10">
+          Projects I built out
+        </h2>
+        <div class="first-container min-w-full md:flex">
+          <div>
+            <h2 class="text-4xl pt-6 mt-8 text-center md:text-left">
+              Pig game
+            </h2>
+            <p class="pt-4 text-2xl text-center md:w-2/3 md:text-left">
+              <span>The</span>
+              <span>Pig</span>
+              <span>game</span>
+              <span>was</span>
+              <span>built</span>
+              <span>with</span>
+              <span>basically</span>
+              <span>html,</span>
+              <span>css and javascript,</span>
+              <span>In</span>
+              <span>the pig game</span>
+              <span>the user rolls</span>
+              <span>the dice,</span>
+              <span>when</span>
+              <span>they hold their scores</span>
+              <span> are </span>
+              <span> saved</span>
+              <span>and the</span>
+              <span>next player</span>
+              <span>is allowed </span>
+              <span>to play,</span>
+              <span>but if the</span>
+              <span>user rolls a 1 </span>
+              <span>they</span>
+              <span>loose all their</span>
+              <span>points oops,</span>
+              <span>you can play the game</span>
+              <span>by clicking</span>
+              <span>on the image</span>
+            </p>
+          </div>
+
+          <div class="first-containerimg">
+            <a
+              href="https://es-pig-game.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                alt="pig-game"
+                src="images/pig-game.jpg"
+                class="w-10/12 h-60 mt-20 md:w-max h-96"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="second-container min-w-full md:flex mt-40 bg-black text-white rounded-3xl md:rounded-full"
+        >
+          <div class="second-container-text">
+            <h2 class="text-4xl pt-6 mt-28 text-center md:text-left">
+              Guess my number game
+            </h2>
+            <p class="pt-4 text-2xl text-center md:w-2/3 md:text-left">
+              Here you guess a random number if its higher than the number
+              genrated from the game you will be notified and if its lower you
+              also will be, when you get teh gane right you win, for every trial
+              you loose points.
+            </p>
+          </div>
+
+          <div class="second-container-img">
+            <a
+              href="http://known-low.surge.sh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                alt="guess-game"
+                src="images/guess-game.jpg"
+                class="w-10/12 h-60 mx-10 mt-20 md:w-max h-96"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="third-container mt-28 min-w-full bg-slate-100 rounded-3xl"
+          id="about"
+        >
+          <h2 class="text-center text-6xl pt-32 sm:pt-10">Meet me</h2>
+          <div class="third-container-text text-2xl">
+            <p class="my-16 py-0 px-16 lg:px-80">
+              Hi,if you made it to this section then I'll assume you want to
+              know more about me I am a 22 year old learning to build with html,
+              css and javascript, eventually I will rule the world but right now
+              ${Javascript} dey carry me dey go where I never know. I love music
+              and ultimately I love JESUS. I am not even sure this is a
+              portfolio or an about me space anyways welcome to my corner.
+            </p>
+          </div>
+
+          <footer
+            class="mt-20 w-full text-white font-4xl leading-normal lg:mt-60"
+          ></footer>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
